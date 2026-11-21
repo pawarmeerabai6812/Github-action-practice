@@ -1,0 +1,14 @@
+name: hello
+
+# on tell when the workflow Run
+on:
+  workflow_dispatch: 
+# job tell what the workflow should do , there can we one or more than job  hence we right job
+# jobs is an object so need indentation
+jobs:
+# first job (give indentation)
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello Dosto"
